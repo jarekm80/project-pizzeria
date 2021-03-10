@@ -73,7 +73,7 @@
       thisProduct.element = utils.createDOMFromHTML(generatedHTML);
       /* [DONE] find menu container */
       const menuContainer = document.querySelector(select.containerOf.menu);
-      /* add element to menu */
+      /* [DONE] add element to menu */
       menuContainer.appendChild(thisProduct.element);
     }
 
@@ -165,18 +165,15 @@
       price *= thisProduct.amountWidget.value;
       thisProduct.priceElem.innerHTML = price;
     }
-
   }
 
-  //class for processing amount
+  // [DONE] class for processing amount
   class AmountWidget{
     constructor(element){
       const thisWidget = this;
       thisWidget.getElements(element);
-      thisWidget.setValue(thisWidget.input.value);
+      thisWidget.setValue(settings.amountWidget.defaultValue);
       thisWidget.initActions();
-      console.log('AW : ',thisWidget);
-      console.log('constructor arguments : ',element);
     }
 
     getElements(element){
@@ -187,7 +184,7 @@
       thisWidget.linkIncrease = thisWidget.element.querySelector(select.widgets.amount.linkIncrease);
     }
 
-    //validate and add fire announce if ok
+    // [DONE] validate and add fire announce if ok
     setValue(value){
       const thisWidget = this;
       const newValue = parseInt(value);
@@ -199,6 +196,7 @@
       thisWidget.input.value = thisWidget.value;
     }
 
+    // [DONE] add listeners to updated event
     initActions(){
       const thisWidget = this;
       thisWidget.input.addEventListener('change',function(){
@@ -214,7 +212,7 @@
       });
     }
     
-    //make event ????????????
+    // [DONE] make and publish updated event 
     announce(){
       const thisWidget = this;
       const event = new Event('updated');
