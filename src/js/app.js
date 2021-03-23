@@ -7,17 +7,23 @@ const app = {
     const thisApp = this;
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
     thisApp.activatePage(thisApp.pages[0].id);
+    thisApp.navLinks = document.querySelectorAll(select.nav.links);
+
   },
 
   activatePage: function(pageID){
     const thisApp = this;
     /* Add class active to matching pages, remove it from non-matching */
     for (let page of thisApp.pages){
-      if (page.id === pageID){
-        page.classList.add(classNames.pages.active);
-      }
+      page.classList.toggle(classNames.pages.active, page.id === pageID);
     }
     /* Add class active to matching links, remove it from non-matching */
+    for (let link of thisApp.links){
+      link.classList.toggle(
+        classNames.nav.active,
+        link.getAttribute('href') === '#' + pageID
+      );
+    }
   },
 
   initMenu: function(){
