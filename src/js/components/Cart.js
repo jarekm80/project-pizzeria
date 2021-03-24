@@ -27,9 +27,9 @@ class Cart{
       thisCart.dom.wrapper.classList.toggle(classNames.cart.wrapperActive);
     });
     thisCart.dom.productList.addEventListener('updated', thisCart.update.bind(thisCart));
-    //  thisCart.dom.productList.addEventListener('updated', function(){
-    //    thisCart.update();
-    //  });
+    //thisCart.dom.productList.addEventListener('updated', function(){
+    //  thisCart.update();
+    //});
     thisCart.dom.productList.addEventListener('remove', function(event){
       thisCart.remove(event.detail.cartProduct);
     });
