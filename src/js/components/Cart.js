@@ -61,7 +61,6 @@ class Cart{
       },
       body: JSON.stringify(payload),
     };
-      //gdzie przechowywane są dane ??
     fetch(url, options);
   }
 
