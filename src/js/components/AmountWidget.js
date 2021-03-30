@@ -29,6 +29,7 @@ class AmountWidget extends BaseWidget{
   // [DONE] add listeners to updated event
   initActions(){
     const thisWidget = this;
+    thisWidget.setValue(thisWidget.dom.input.value);
     thisWidget.dom.input.addEventListener('change',function(){
       thisWidget.setValue(thisWidget.dom.input.value);
     });

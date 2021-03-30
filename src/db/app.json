@@ -206,7 +206,7 @@
   "event": [
     {
       "id": 1,
-      "date": "2019-01-01",
+      "date": "2021-03-28",
       "hour": "12:30",
       "table": 1,
       "repeat": false,
@@ -255,5 +255,14 @@
       "starters": ["lemonWater"]
     }
   ],
-  "booking": []
+  "booking": [
+      {
+        "id": 1,
+        "date": "2021-03-27",
+        "hour": "12:00",
+        "table": 1,
+        "duration": 3,
+        "starters": ["lemonWater"]
+      }
+  ]
 }
