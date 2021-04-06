@@ -1,1 +1,1 @@
-https://dashboard.heroku.com/apps/jarekpizzeria
+http://jarekpizzeria.herokuapp.com/
