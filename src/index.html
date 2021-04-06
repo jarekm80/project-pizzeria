@@ -9,6 +9,7 @@
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="vendor/range-slider.min.css">
+  <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -77,15 +78,82 @@
   <script id="template-home" type="text/x-handlebars-template">
     <div class="homeContent">
       <div class ="inRow">
-        <a href="#" class="order">
+        <a href="#order" class="order">
           <H2>ORDER ONLINE</H2>
           <p>Delicius food delivered to Your door.</p>
         </a>
-        <a href="#" class="book">
+        <a href="#booking" class="book">
           <h2>BOOK A TABLE</h2>
           <p>Book table in your home.</p>
         </a>
-      </div>  
+      </div>
+      <div class="opening">
+        <div class="centered">
+          <h2>OPENING HOURS:</h2>
+          <P>Tue-Sun, 12PM-12AM</P>
+        </div>
+      </div>
+      <div class="main-carousel">
+        <div class="carousel-cell">
+          <div class="left">
+            <img src="images/assets/pizza-3.jpg">
+          </div>
+          <div class="right">
+            <h4>Best service</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum nisi ac semper cursus. Orci varius.</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="left">
+            <img src="images/assets/pizza-3.jpg">
+          </div>
+          <div class="right">
+            <h4>Unknown service</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum nisi ac semper cursus. Orci varius.</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="left">
+            <img src="images/assets/pizza-3.jpg">
+          </div>
+          <div class="right">
+            <h4>Worst service</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum nisi ac semper cursus. Orci varius.</p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="left">
+            <img src="images/assets/pizza-3.jpg">
+          </div>
+          <div class="right">
+            <h4>Better service</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum nisi ac semper cursus. Orci varius.</p>
+          </div>
+        </div>
+      </div>
+      <div class="galleryInRow">
+        <div class="item">
+          <img src="./images/assets/pizza-4.jpg">
+          <ul class="overlay">
+            <li><a href="#"><i class="fas fa-heart"></i>Like</a></li>
+            <li><a href="#"><i class="fas fa-share-alt"></i>Share</a></li>
+          </ul>
+        </div>
+        <div class="item">
+          <img src="./images/assets/pizza-5.jpg">
+          <ul class="overlay">
+            <li><a href="#"><i class="fas fa-heart"></i>Like</a></li>
+            <li><a href="#"><i class="fas fa-share-alt"></i>Share</a></li>
+          </ul>
+        </div>
+        <div class="item">
+          <img src="./images/assets/pizza-6.jpg">
+          <ul class="overlay">
+            <li><a href="#"><i class="fas fa-heart"></i>Like</a></li>
+            <li><a href="#"><i class="fas fa-share-alt"></i>Share</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </script>
 
@@ -265,6 +333,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="vendor/range-slider.min.js" type="module"></script>
+  <script src="vendor/flickity.pkgd.min.js" type="module"></script>
   <script src="js/app.js" type="module"></script>
 </body>
 </html>

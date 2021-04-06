@@ -42,6 +42,7 @@ export const select = {
       input: 'input[type="range"]',
       output: '.output',
     },
+    carousel: '.main-carousel',
   },
   // CODE ADDED START
   cart: {
@@ -71,6 +72,9 @@ export const select = {
   },
   nav: {
     links: '.main-nav a',
+  },
+  home: {
+    links: '.inRow',
   },
   // CODE ADDED END
 };
